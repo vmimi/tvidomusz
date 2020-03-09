@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lapozó</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scalable=1.0 user-scalable=no">
+    <link rel = "icon" href="images/MOlan.jpg" type = "image/x-icon"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("article").hide();
+            $("#a1").show();
+            $("a").click(function(){
+                var nav = $(this).index();
+                $("a").removeClass("active");
+                $(this).addClass("active");
+                $("article").hide();
+                if(nav == 0){
+                    $("#a1").show();
+                }
+                else if(nav == 6){
+                    $("#a5").show();
+                }
+                else
+                $("#a"+(nav) + "").show();
+            }
+
+            );
+        }
+
+        );
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+            <header>
+                <span>Az én saját</span> weboldalam.
+            </header>
+            <nav>
+                <a href="index.html">Kezdőlap</a>&bull;
+                <a href="rolam.html">Rólam</a>&bull;
+                <a href="hobbim.html">Hobbim</a>&bull;
+                <a href="iskolam.html">Iskolám</a>&bull;
+                <a href="zene.html">Zene</a>&bull;
+                <a href="lepegeto.html">Lapozó</a>&bull;
+            </nav>
+            <nav>
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a class="active" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">&raquo;</a>
+                </div>
+            </nav>
+            <section>
+                <h1>Híres Youtuberek</h1>
+                <article id="a1">     
+                    <figure>
+                        <img src="images/pewdss.jpg">
+                        <figcaption>Felix Arvid Ulf Kjellberg "<a href="https://www.youtube.com/user/PewDiePie">Pewdiepie</a>"</figcaption>
+                    </figure>     
+                    <p>Svéd youtuber, az egyik legfeliratkozottabb csatorna a youtubeon. Jelenleg Brighton-ban él, 30 éves. 103 Millió feliratkozója van.</p>
+                </article>
+                <article id="a2">
+                    <figure>
+                        <img src="images/Jacksepticeye-842x1024.png">
+                        <figcaption>Seán William McLoughlin "<a href="https://www.youtube.com/user/jacksepticeye">Jacksepticeye</a>"</figcaption>
+                    </figure>
+                    <p>Írországi youtuber, 30 éves és jelenleg Brighton-ban él. 23 Millió 400.000 feliratkozója van.</p>
+                 </article>
+                <article id="a3">
+                    <figure>
+                        <img src="images/dan.jpg">
+                        <figcaption><a href="https://www.youtube.com/user/danisnotonfire">Daniel James Howell</a> </figcaption>
+                    </figure>
+                    <p>Angol youtuber, 28 éves és Londonban él Phil Lester-el. 6 Millió 510.000 feliratkozója van.</p>
+                 </article>
+                <article id="a4">
+                    <figure>
+                        <img src="images/phil.jpg">
+                        <figcaption><a href="https://www.youtube.com/channel/UCHUE4ypXKp7ZkmdWbGJNgJg">Philip Michael Lester</a></figcaption>
+                    </figure>
+                    <p>Angol youtuber, 33 éves és Londonban él Daniel Howell-al. 4 Millió 150.000 feliratkozója van.</p>
+                 </article>
+                <article id="a5">
+                    <figure>
+                        <img src="images/ryland.png">
+                        <figcaption><a href="https://www.youtube.com/user/ryanadams7">Ryland Adams</a></figcaption>      
+                    </figure>
+                    <p>Amerikai youtuber, 28 éves és Shane Dawson jegyese. Los Angelesben élnek jelenleg. 4 Millió 650.000 feliratkozója van.</p>
+                 </article>
+        </section>
+            <aside>
+                <h1>Instagram elérhetőségek</h1>
+                <br>
+                <br>
+                <a href="https://www.instagram.com/pewdiepie/?hl=en">Felix</a>
+                <br>
+                <br>
+                <a href="https://www.instagram.com/jacksepticeye/?hl=en">Seán</a>
+                <br>
+                <br>
+                <a href="https://www.instagram.com/danielhowell/?hl=en">Dan</a>
+                <br>
+                <br>
+                <a href="https://www.instagram.com/amazingphil/?hl=en">Phil</a>
+                <br>
+                <br>
+                <a href="https://www.instagram.com/rylandadams/?hl=en">Ryland</a>
+            </aside>
+            <div class="clear"></div>
+            <footer>
+                <a href="">Kookmin is real.</a>
+            </footer>
+
+
+
+    </div>
+</body>
+</html>
